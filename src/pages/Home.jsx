@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <main className=" h-[100vh] items-center justify-center flex">
-      <div className="w-full md:w-[880px]  items-center sm:p-5 p-1 m-auto text-white bg-black rounded-lg overflow-hidden">
+      <div className="w-full min-h-[290px] md:w-[880px]  items-center sm:p-5 p-1 m-auto text-white bg-black rounded-lg overflow-hidden">
         <h1 className="mb-5 text-3xl font-bold ">
           REACT CRUD APP WITH{" "}
           <span className=" text-reduxtext max-sm:block"> REDUX</span>
