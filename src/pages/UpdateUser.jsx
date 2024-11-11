@@ -69,7 +69,7 @@ const UpdateUser = () => {
           >
             Back
           </button>
-          <button className="relative px-6 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+          <button className="relative px-6 py-3 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-700">
             <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 opacity-20"></span>
             <span className="relative">Submit</span>
           </button>
