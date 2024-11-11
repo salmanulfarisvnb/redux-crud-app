@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full sm:p-5 ">
+    <div className="w-full md:w-[880px] sm:p-5  m-auto">
       <h1 className="mb-5 text-3xl font-bold ">
         REACT CRUD APP WITH <span className=" text-reduxtext"> REDUX</span>
       </h1>
@@ -40,7 +40,7 @@ const Home = () => {
         </thead>
         <tbody>
           {user.map((item, index) => (
-            <tr key={index}>
+            <tr className="text-sm sm:text-base" key={index}>
               <td className="border border-slate-700 ...">{item.id}</td>
               <td className="border border-slate-700  ...">
                 {firstLetCap(item.name)}{" "}
@@ -48,11 +48,11 @@ const Home = () => {
               <td className="border border-slate-700 ...">{item.email} </td>
               <td className="border border-slate-700 ...">
                 {" "}
-                <div className="flex justify-center gap-3">
+                <div className="flex justify-center gap-1 sm:gap-2 sm:my-2">
                   <Link to={`update_user/${item.id}`}>
                     <button
                       type="button"
-                      className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                      className="px-2 py-1 text-sm font-medium text-white bg-blue-700 rounded-lg sm:p-4 sm:py-2 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                     >
                       Update
                     </button>
@@ -61,7 +61,7 @@ const Home = () => {
                   <button
                     onClick={() => handleDelete(item.id)}
                     type="button"
-                    className="px-5 py-2 text-sm font-medium text-white bg-red-700 rounded-lg focus:outline-none hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                    className="px-2 py-1 text-sm font-medium text-white bg-red-700 rounded-lg sm:p-4 sm:py-2 focus:outline-none hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   >
                     Delete
                   </button>
