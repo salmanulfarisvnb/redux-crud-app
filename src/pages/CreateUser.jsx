@@ -66,8 +66,17 @@ const CreateUser = () => {
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
 
-        <div className="flex justify-end mt-5 ">
-          <button className="relative px-6 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+        <div className="flex justify-between mt-5 ">
+          <button
+            onClick={() => navigate("/redux-crud-app")}
+            className="px-4 py-2 text-black transition duration-200 bg-gray-200 rounded-lg hover:bg-gray-300"
+          >
+            Back
+          </button>
+          <button
+            type="submit"
+            className="relative px-6 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+          >
             <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 opacity-20"></span>
             <span className="relative">Submit</span>
           </button>
