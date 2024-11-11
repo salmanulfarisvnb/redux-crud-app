@@ -15,7 +15,8 @@ const Home = () => {
   return (
     <div className="w-full md:w-[880px] sm:p-5 p-1 m-auto text-white bg-black rounded-lg overflow-hidden">
       <h1 className="mb-5 text-3xl font-bold ">
-        REACT CRUD APP WITH <span className=" text-reduxtext"> REDUX</span>
+        REACT CRUD APP WITH{" "}
+        <span className=" text-reduxtext max-sm:block"> REDUX</span>
       </h1>
       <div className="flex justify-start mb-3">
         <Link to={"create_user"}>
