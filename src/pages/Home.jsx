@@ -42,7 +42,7 @@ const Home = () => {
           {user.map((item, index) => (
             <tr key={index}>
               <td className="border border-slate-700 ...">{item.id}</td>
-              <td className="border border-slate-700 ...">
+              <td className="border border-slate-700  ...">
                 {firstLetCap(item.name)}{" "}
               </td>
               <td className="border border-slate-700 ...">{item.email} </td>

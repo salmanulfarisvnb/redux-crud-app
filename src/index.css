@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+td {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
