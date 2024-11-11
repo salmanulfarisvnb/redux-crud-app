@@ -12,7 +12,7 @@ import RootLayout from "./layout/RootLayout";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
+      <Route path="redux-crud-app" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="update_user/:id" element={<UpdateUser />} />
         <Route path="create_user" element={<CreateUser />} />
