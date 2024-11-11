@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full md:w-[880px] sm:p-5  m-auto">
+    <div className="w-full md:w-[880px] sm:p-5 p-1 m-auto text-white bg-black rounded-lg overflow-hidden">
       <h1 className="mb-5 text-3xl font-bold ">
         REACT CRUD APP WITH <span className=" text-reduxtext"> REDUX</span>
       </h1>
