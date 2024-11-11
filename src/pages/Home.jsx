@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full p-5 ">
+    <div className="w-full sm:p-5 ">
       <h1 className="mb-5 text-3xl font-bold ">
         REACT CRUD APP WITH <span className=" text-reduxtext"> REDUX</span>
       </h1>
