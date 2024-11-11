@@ -13,3 +13,9 @@ td {
   word-break: break-word;
   white-space: normal;
 }
+
+body,
+html {
+  height: 100%; /* Ensure the body and html fill the viewport height */
+  margin: 0;
+}
