@@ -22,14 +22,19 @@ const userSlice = createSlice({
     },
     deleteUser: (state, action) => {
       const { id } = action.payload;
-      let index;
+      // let index;
 
-      state.user.map((item, ind) => {
-        if (item.id === id) {
-          return (index = ind);
-        }
-      });
-      state.user.splice(index, 1);
+      // state.user.map((item, ind) => {
+      //   if (item.id === id) {
+      //     return (index = ind);
+      //   }
+      // });
+      // state.user.splice(index, 1);
+      const ud = state.user.filter((item) => item.id !== id);
+
+      if (ud) {
+        state.user = ud;
+      }
     },
   },
 });

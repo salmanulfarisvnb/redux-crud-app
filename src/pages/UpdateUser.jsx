@@ -30,7 +30,7 @@ const UpdateUser = () => {
       <h1 className="mb-4 text-3xl font-bold ">UPDATE USER</h1>
       <form
         onSubmit={handleUpdate}
-        className="w-full p-3 bg-black md:w-1/2 xl:w-2/4"
+        className="w-full p-3 bg-black max-w-[880px]"
       >
         <label
           htmlFor="base-input"

@@ -32,11 +32,11 @@ const CreateUser = () => {
     navigate("/redux-crud-app");
   };
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen ">
+    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <h1 className="mb-4 text-3xl font-bold ">CREATE USER</h1>
       <form
         onSubmit={handleSubmit}
-        className="w-full p-3 bg-black md:w-1/2 xl:w-2/4"
+        className="w-full max-w-[880px] p-3 bg-black"
       >
         <label
           htmlFor="base-input"
